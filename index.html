@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web</title>
+    <link rel="stylesheet" href="Assets/main.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+
+<body>
+
+    <header id="header">Eurostar</header>
+
+    <img id="Header" src="Images/Header.jpg" alt="header">
+
+    <H3>Welkom op de verhalenwebsite van Eurostar!</H3>
+
+    <form method="get" action="/filter.html">
+        <button id="filter"></button>
+    </form>
+
+    <div class="zoek-box">
+        <input class="zoek-txt" type="text" name="zoeken" placeholder="Zoeken...">
+        <a class="zoek-btn" href="#">
+        <i class="fas fa-search"></i>
+    </a>
+    </div>
+
+    <form action="method">
+
+        <section id="form" class="toggle-btn">
+
+            <button class="filter">Nieuwste</button>
+            <button id="filterpop" class="filter">Populariteit</button>
+
+            <ul>
+                <li id="boven"><input type="checkbox" id="alfabetisch" name="selector">
+                    <label for="alfabetisch">Alfabetisch
+                </label>
+                </li>
+
+                <li><input type="checkbox" id="meestgedownload" name="selector">
+                    <label for="meestgedownload">Meest gedownload</label>
+                </li>
+
+                <li><input type="checkbox" id="meestelikes" name="selector">
+                    <label for="leesduur">Leesduur (kort > lang)</label>
+                </li>
+
+                <li id="onder"><input type="checkbox" id="populairsteverhalen" name="selector">
+                    <label for="populairsteverhalen">Leesduur (lang > kort)</label>
+                </li>
+            </ul>
+
+            <form action="/filter.html" method="get">
+                <button id="zoeken">Zoeken</button>
+            </form>
+        </section>
+    </form>
+
+    <section>
+        <article id="eerste">
+            <img src="Images/Moe_mobiel.png" alt="Moe" class="responsive">
+            <header>
+                <H2>Moe</H2> <small>12 min</small>
+            </header>
+            <p>De buschauffeur port me wakker. We zijn bij de eindhalte, Centraal Station. Ik stap uit en duw de kinderwagen voort waarin mijn zoon ligt te slapen. Ik …</p>
+            <button class="blinks">Download</button>
+            <button class="brechts">Lees verhaal</button>
+        </article>
+
+        <article id="tweede">
+            <img src="Images/Droom_mobiel.png" alt="Droom" class="responsive">
+            <header>
+                <H2>Droom</H2> <small>13 min</small>
+            </header>
+            <p>De buschauffeur port me wakker. We zijn bij de eindhalte, Centraal Station. Ik stap uit en duw de kinderwagen voort waarin mijn zoon ligt te slapen. Ik …</p>
+            <button class="blinks">Download</button>
+            <button class="brechts">Lees verhaal</button>
+        </article>
+
+        <article id="derde">
+            <img src="Images/Western_mobiel.png" alt="Western" class="responsive">
+            <header>
+                <H2>Western</H2> <small>14 min</small>
+            </header>
+            <p>De buschauffeur port me wakker. We zijn bij de eindhalte, Centraal Station. Ik stap uit en duw de kinderwagen voort waarin mijn zoon ligt te slapen. Ik …</p>
+            <button class="blinks">Download</button>
+            <button class="brechts">Lees verhaal</button>
+        </article>
+
+    </section>
+
+    <script src="Scripts/script.js"></script>
+</body>
+
+</html>

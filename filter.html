@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web</title>
+    <link rel="stylesheet" href="Assets/main.css">
+</head>
+
+<body>
+
+    <header id="header">Filter</header>
+
+    <img id="Header" src="Images/Header.jpg" alt="header">
+
+    <H3>Welkom op de verhalenwebsite van Eurostar!</H3>
+
+    <form method="get" action="/index.html">
+        <button id="sluitfilter"></button>
+    </form>
+
+    <form action="method" class="filterform">
+
+        <section id="form" class="toggle-btn">
+
+            <button class="filter">Nieuwste</button>
+            <button id="filterpop" class="filter">Populariteit</button>
+
+            <ul>
+                <li id="boven"><input type="checkbox" id="alfabetisch" name="selector">
+                    <label for="alfabetisch">Alfabetisch
+                </label>
+                </li>
+
+                <li><input type="checkbox" id="meestgedownload" name="selector">
+                    <label for="meestgedownload">Meest gedownload</label>
+                </li>
+
+                <li><input type="checkbox" id="meestelikes" name="selector">
+                    <label for="leesduur">Leesduur (kort > lang)</label>
+                </li>
+
+                <li id="onder"><input type="checkbox" id="populairsteverhalen" name="selector">
+                    <label for="populairsteverhalen">Leesduur (lang > kort)</label>
+                </li>
+            </ul>
+
+            <form method="get" action="/index">
+                <button id="zoeken">Zoeken</button>
+            </form>
+        </section>
+    </form>
+
+</body>
+
+</html>
