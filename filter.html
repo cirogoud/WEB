@@ -3,8 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web</title>
     <link rel="stylesheet" href="Assets/main.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 
 <body>
@@ -19,9 +21,16 @@
         <button id="sluitfilter"></button>
     </form>
 
+    <div class="zoek-box">
+        <input class="zoek-txt" type="text" name="zoeken" placeholder="Zoeken...">
+        <a class="zoek-btn" href="#">
+        <i class="fas fa-search"></i>
+    </a>
+    </div>
+
     <form action="method" class="filterform">
 
-        <section id="form" class="toggle-btn">
+        <fieldset id="form" class="toggle-btn">
 
             <button class="filter">Nieuwste</button>
             <button id="filterpop" class="filter">Populariteit</button>
@@ -37,18 +46,18 @@
                 </li>
 
                 <li><input type="checkbox" id="meestelikes" name="selector">
-                    <label for="leesduur">Leesduur (kort > lang)</label>
+                    <label for="leesduur k>l">Leesduur (kort > lang)</label>
                 </li>
 
                 <li id="onder"><input type="checkbox" id="populairsteverhalen" name="selector">
-                    <label for="populairsteverhalen">Leesduur (lang > kort)</label>
+                    <label for="Leesduur l>k">Leesduur (lang > kort)</label>
                 </li>
             </ul>
 
             <form method="get" action="/index">
                 <button id="zoeken">Zoeken</button>
             </form>
-        </section>
+        </fieldset>
     </form>
 
 </body>
