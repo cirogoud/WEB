@@ -17,12 +17,12 @@ body {
     text-align: center;
     padding: 10px;
     margin-top: -10px;
-    margin-left: -10px;
-    margin-right: -10px;
+    margin-left: -30px;
+    margin-right: -30px;
 }
 
-#Header {
-    max-width: 100%;
+#Headerimg {
+    width: 110.5%;
     margin-left: -0.5em;
 }
 
@@ -34,6 +34,8 @@ h2 {
 }
 
 #H2 {
+    text-align: center;
+    margin-left: -8px;
     margin-bottom: 20px;
     margin-top: 10px;
 }
@@ -41,9 +43,9 @@ h2 {
 H3 {
     text-align: center;
     text-shadow: 1px 1px black;
-    font-size: 1em;
+    font-size: 1.em;
     position: absolute;
-    top: 12%;
+    top: 14%;
     left: 50%;
     color: #FFFFFF;
     transform: translate(-50%, -50%);
@@ -54,6 +56,17 @@ H3 {
 }
 
 /* filter */
+
+fieldset {
+    margin: 0 auto;
+    text-align: left;
+    border: none;
+    background-color: #FFFFFF;
+    border-radius: 0.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 
 ul {
     list-style: none;
@@ -113,7 +126,7 @@ li {
 #sluitfilter {
     background-image: url(../Images/Geelkruis.png);
     background-repeat: no-repeat;
-    position: fixed;
+    position: absolute;
     top: 15px;
     left: 25px;
     width: 30px;
@@ -132,10 +145,6 @@ li {
     background: none !important;
 }
 
-#filterpop:active {
-    background: red;
-}
-
 #zoeken {
     border: none;
     background-color: rgb(251, 221, 15);
@@ -150,24 +159,12 @@ li {
 
 /* Blok */
 
-fieldset {
-    text-align: left;
-    border: none;
-    background-color: #FFFFFF;
-    border-radius: 0.5em;
-    width: 80%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 article {
-    margin-left: -25px;
+    margin-left: -8px;
     margin-bottom: 1em;
     width: 100%;
     max-height: 25em;
-    display: block;
-    padding-left: 25px;
-    padding-right: 25px;
+    max-width: 25em;
     padding-bottom: 0.5em;
 }
 
@@ -184,8 +181,27 @@ article {
 }
 
 .responsive {
-    width: 115%;
+    width: 115.5%;
     margin-left: -25px;
+}
+
+h2 {
+    color: #0C3759;
+    display: inline;
+    margin-left: 1em;
+    width: 100%;
+}
+
+small {
+    color: #0C3759;
+    width: 100%;
+    margin-left: 0.5em;
+}
+
+p {
+    font-size: 1em;
+    margin-left: 1.55em;
+    width: 86%;
 }
 
 .blinks {
@@ -194,9 +210,11 @@ article {
     color: #FFFFFF;
     border-radius: 0.8em;
     border: none;
-    padding: 1em;
     display: inline;
-    width: 50%;
+    width: 40%;
+    margin-left: 1.55em;
+    margin-right: 1.9em;
+    padding: 0.5em;
 }
 
 .brechts {
@@ -205,49 +223,31 @@ article {
     color: #FFFFFF;
     border-radius: 0.8em;
     border: none;
-    padding: 1em;
     display: inline;
-    width: 45%;
-}
-
-h2 {
-    color: #0C3759;
-    display: inline;
-    margin-left: 0.3em;
-    width: 100%;
-}
-
-small {
-    color: #0C3759;
-    width: 100%;
-    margin-left: 1em;
-}
-
-p {
-    font-size: 1em;
-    margin-left: 0.5em;
-    width: 100%;
+    width: 40%;
+    padding: 0.5em;
 }
 
 /*Zoeken*/
 
 .zoek-box {
     position: absolute;
-    top: 4%;
-    left: 88%;
+    top: 4.5%;
+    left: 90%;
     transform: translate(-50%, -50%);
     background: #c6c616;
     height: 20px;
     border-radius: 40px;
     padding: 10px;
 }
+
 .zoek-box:hover > .zoek-txt {
-    width: 80px;
-    padding: 0 6px;
+    width: 70px;
+    padding-left: 10px;
 }
 
-.zoek-box:hover {
-   margin-left: -5px;
+.zoek-box:hover > .zoek-btn {
+    margin-top: -18px;
 }
 
 .zoek-btn {
@@ -276,36 +276,207 @@ p {
     width: 0px;
 }
 
+/* Download button */
+
+.download {
+    margin-left: 20px;
+    padding: 5px;
+    background: none;
+}
+
+#download {
+    background-color: #0C3759;
+    color: white;
+    padding: 10px;
+    padding-right: 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+.download-btn {
+    background-color: #0C3759;
+    color: white;
+    padding: 7.5px;
+    border-radius: 5px;
+    margin-left: -35px;
+}
+
+.download:hover > .download-btn {
+    color: yellow;
+}
+
+.download:hover > #download {
+    color: yellow;
+}
+
+/*Moe verhaal*/
+
+#achtergrond {
+    background-image: no-repeat;
+    position: absolute;
+    width: 320%;
+    height: 220%;
+    left: -125%;
+    top: 8%;
+}
+
+#verhaal {
+    margin: 0;
+    color: white;
+    z-index: 1;
+}
+
+#verhaal1 {
+    color: white;
+    z-index: 1;
+}
+
+#verhaal11 {
+    position: absolute;
+    top: 8.9%;
+    left: 2%;
+    color: white;
+    z-index: 1;
+}
+
+#verhaal2 {
+    color: white;
+    z-index: 1;
+    opacity: 0.6;
+}
+
+#verhaal21 {
+    position: absolute;
+    top: 55.5%;
+    left: 2.5%;
+    color: white;
+    z-index: 1;
+    opacity: 0.6;
+}
+
+#verhaal3 {
+    color: white;
+    z-index: 1;
+    opacity: 0.3;
+}
+
+#verhaal31 {
+    position: absolute;
+    top: 123.8%;
+    left: 3%;
+    color: white;
+    z-index: 1;
+    opacity: 0.3;
+}
+
 
 /* Media Queries*/
 
 @media only screen and (min-width:32em) {
 
-    H3 {
-        font-size: 1em;
-        position: absolute;
-        top: 15%;
-        left: 50%;
-    }
-
-    #form {
-        text-align: center;
-        width: 50%;
-    }
-}
-
-@media only screen and (min-width:65em) {
-
+    /*Bovenkant*/
     H3 {
         font-size: 2em;
         position: absolute;
-        top: 25%;
-        left: 50%;
+        top: 14%;
+    }
+
+    .zoek-box {
+        left: 93%;
+        margin-top: -18px;
+    }
+
+    /*Filter pagina*/
+    #form {
         width: 50%;
     }
 
-    #form {
-        text-align: center;
-        width: 40%;
+    /*Onderkant*/
+    section {
+        margin: 0 auto;
     }
-}
+
+    article {
+        display: inline-block;
+        margin-right: 0;
+        margin-bottom: 1em;
+        width: 26%;
+        max-height: 25em;
+        max-width: 25em;
+        padding-left: 25px;
+        padding-right: 30px;
+        padding-bottom: 0.5em;
+    }
+
+    .responsive {
+        width: 128%
+    }
+
+    h2 {
+        margin-left: -10px;
+    }
+
+    p {
+        margin-left: -9px;
+        width: 105%;
+    }
+
+    #eerste {
+        background-color: #B4E0E8;
+    }
+
+    #tweede {
+        background-color: #91D1DD;
+    }
+
+    #derde {
+        background-color: #B4E0E8;
+    }
+
+    .download {
+        margin-left: -15px;
+        padding: 5px;
+        background: none;
+    }
+    .download-btn {
+        padding: 5px;
+    }
+    /*Moe verhaal*/
+    @media only screen and (min-width:65em) {
+
+        /*Bovenkant*/
+        H3 {
+            font-size: 3em;
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            width: 50%;
+        }
+
+        #Headerimg {
+            height: 350px;
+        }
+        .zoek-box {
+            left: 93%;
+            margin-top: -9px;
+        }
+        .zoek-box:hover > .zoek-txt {
+            width: 140px;
+            padding: 0 6px;
+        }
+
+        .zoek-box:hover > .zoek-btn {
+            margin-top: -18px;
+        }
+
+        /*Filter*/
+        #form {
+            text-align: center;
+            width: 40%;
+        }
+        /*Onderkant*/
+        .responsive {
+            width: 115.5%;
+        }
+        /*Moe verhaal*/
+    }

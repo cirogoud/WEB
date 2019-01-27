@@ -1,3 +1,4 @@
-function toggleSidebar() {
-    document.getElementById("sidebar").classList.toggle('active');
-} <
+function change()
+{
+    document.getElementById("download").value="Gedownload"; 
+}
